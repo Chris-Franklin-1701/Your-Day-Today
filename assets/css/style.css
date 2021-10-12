@@ -1,0 +1,17 @@
+.hero {
+    background-image: url("../images/beautiful_morning-wallpaper-2048x1152.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    color:olive;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: olive;
+    font-style: italic;
+}
+
