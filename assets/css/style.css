@@ -117,3 +117,7 @@ p span {
 body {
     background-color: var(--khaki);
 }
+
+.column {
+    margin-top: 40px;
+}
