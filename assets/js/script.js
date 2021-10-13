@@ -25,9 +25,9 @@ function getValueInfo() {
     console.log(data);
 
     //$(appleValue).html("<br>"+"$"+data.quoteResponse.result[0].regularMarketPreviousClose);
-    $(microsoftValue).html("<br>"+"$"+data.quoteResponse.result[1].regularMarketPreviousClose);
-    $(amazonValue).html("<br>"+"$"+data.quoteResponse.result[2].regularMarketPreviousClose);
-    $(googleValue).html("<br>"+"$"+data.quoteResponse.result[3].regularMarketPreviousClose);
+    //$(microsoftValue).html("<br>"+"$"+data.quoteResponse.result[1].regularMarketPreviousClose);
+    //$(amazonValue).html("<br>"+"$"+data.quoteResponse.result[2].regularMarketPreviousClose);
+    //$(googleValue).html("<br>"+"$"+data.quoteResponse.result[3].regularMarketPreviousClose);
 
     var changeApple = data.quoteResponse.result[0].regularMarketChangePercent;
     var changeMicrosoft = data.quoteResponse.result[1].regularMarketChangePercent;
