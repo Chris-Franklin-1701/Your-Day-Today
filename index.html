@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Your Day Today!!!</title>
@@ -138,18 +141,24 @@
         </div>
     </div>
 
-    <p class="title quote-header">Daily Quote</p>
-            <p id="content"></p>
-            <p id="name"></p>
-
-  <!-- Ticket Master Widget -->
+    <div class = columns>
+ <!-- Ticket Master Widget -->
     
     <div class="ticketmaster" w-type="event-discovery" w-tmapikey="RLJzt9A6RyKl8QCUM4gzHFuKx6nYaRMf" w-googleapikey="YOUR_GOOGLE_API_KEY" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="620" w-height="286" w-size="25" w-border="0" w-borderradius="4" w-postalcode="" w-radius="50" w-city="Chicago" w-period="week" w-layout="horizontal" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="xxl" w-titlelink="off" w-sorting="groupByName" w-id="id_itzreh" w-countrycode="US" w-source="" w-branding="Ticketmaster" w-latlong=""></div>
     <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
 
+    <ul class = "column">
+        <p class="title quote-header">Daily Quote</p>
+        <p id="content"></p>
+        <p id="name"></p>
+    </ul>
+
+    </div>
+        
     <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>    
+
 </body>
 
 </html>
