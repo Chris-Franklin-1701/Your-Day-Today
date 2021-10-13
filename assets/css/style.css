@@ -15,14 +15,69 @@
     font-style: italic;
 }
 
+.hero {
+    background-image: url("../images/beautiful_morning-wallpaper-2048x1152.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    color:olive;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: olive;
+    font-style: italic;
+}
+
+.tile.is-ancestor {
+    margin-top: 7px;
+    margin-left: 0px;
+    margin-right: 7px;
+    justify-content: flex-end;
+}
+
+#container {
+    background-image: url("../images/pexels-lorenzo-241544.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: turquoise;
+    display: block;
+    border-radius: 10px;
+}
+
+#container span {
+    color: black;
+}
+
+.columns.is-link.is-multiline {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    padding: 10px;
+}
+
+p {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+p span {
+    font-weight: normal;
+    font-size: larger;
+}
+
 .quote-header {
     text-align: center;
 }
 
 #content {
     text-align: center;
-}
-
-#name {
-
 }
