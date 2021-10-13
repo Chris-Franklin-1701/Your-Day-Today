@@ -15,3 +15,11 @@
     font-style: italic;
 }
 
+.ticketmaster {
+    height: 247px;
+    width: 620px;
+    border-radius: 10px;
+    border-width: 0px;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
