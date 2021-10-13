@@ -323,6 +323,7 @@ function clearSearch(event) {
     document.location.reload();
 }
 
+//quote API
 const settings = {
 	"async": true,
 	"crossDomain": true,
