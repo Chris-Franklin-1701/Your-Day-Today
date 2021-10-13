@@ -73,3 +73,7 @@ p span {
     font-weight: normal;
     font-size: larger;
 }
+
+.card-content {
+    background: aqua;
+}
