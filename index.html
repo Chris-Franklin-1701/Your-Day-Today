@@ -20,15 +20,106 @@
             <p class="subtitle">All your news and information for you to start the day!</p>
             <div class="field has-addons">
                 <div class="control">
-                    <input class="input" type="text" placeholder="City">
+                    <input class="input" type="text" placeholder="City" id="search-value">
                 </div>
                 <div class="control">
-                    <a class="button is-info">Search</a>
+                    <a class="button is-info" id="search-btn">Search</a>
                 </div>
             </div>
         </div>
     </section>
     <div class="tile is-ancestor">
+        <div class="container is-fluid" style="background-color: skyblue; border-radius: 10px; padding: 15px; margin: 5px;">
+            <div class="notification is-link">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="content" id="currentWeather">
+                            <h3 id="currentLocation" class="location-name mb-1 mt-2 bolder"></h3>
+                            <p>Temperature:<span class="current" id="temperature"></span></p>
+                            <p>Feels Like:<span class="current" id="feels-like"></span></p>
+                            <p>High:<span class="current" id="temp-max"></span></p>
+                            <p>Low:<span class="current" id="temp-min"></span></p>
+                            <p>Pressure:<span class="current" id="pressure"></span></p>
+                            <p>Humidity:<span class="current" id="humidity"></span></p>
+                            <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                            <p>UV Index:<span class="current" id="uv-index"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p id="futureDate0"></p>
+                                <p id="futureImg0"></p>
+                                <p>Temp:<span id="futureTemp0"></span></p>
+                                <p>Humidity:<span id="futureHumidity0"></span></p>
+                                <p>Pressure:<span id="futurePressure0"></span></p>
+                                <p>UV Index:<span id="futureUvindex0"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p id="futureDate1"></p>
+                                <p id="futureImg1"></p>
+                                <p>Temp:<span id="futureTemp1"></span></p>
+                                <p>Humidity:<span id="futureHumidity1"></span></p>
+                                <p>Pressure:<span id="futurePressure1"></span></p>
+                                <p>UV Index:<span id="futureUvindex1"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p id="futureDate2"></p>
+                                <p id="futureImg2"></p>
+                                <p>Temp:<span id="futureTemp2"></span></p>
+                                <p>Humidity:<span id="futureHumidity2"></span></p>
+                                <p>Pressure:<span id="futurePressure2"></span></p>
+                                <p>UV Index:<span id="futureUvindex2"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p id="futureDate3"></p>
+                                <p id="futureImg3"></p>
+                                <p>Temp:<span id="futureTemp0"></span></p>
+                                <p>Humidity:<span id="futureHumidity3"></span></p>
+                                <p>Pressure:<span id="futurePressure3"></span></p>
+                                <p>UV Index:<span id="futureUvindex3"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p id="futureDate4"></p>
+                                <p id="futureImg4"></p>
+                                <p>Temp:<span id="futureTemp0"></span></p>
+                                <p>Humidity:<span id="futureHumidity4"></span></p>
+                                <p>Pressure:<span id="futurePressure4"></span></p>
+                                <p>UV Index:<span id="futureUvindex4"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="tile is-vertical is-2" id="container">
             <div class="columns is-link is-multiline">
                 <div class="column">
@@ -51,7 +142,7 @@
     </div>
 
     <div class = columns>
-  <!-- Ticket Master Widget -->
+ <!-- Ticket Master Widget -->
     
     <div class="ticketmaster column" w-type="event-discovery" w-tmapikey="RLJzt9A6RyKl8QCUM4gzHFuKx6nYaRMf" w-googleapikey="YOUR_GOOGLE_API_KEY" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="620" w-height="286" w-size="25" w-border="0" w-borderradius="4" w-postalcode="" w-radius="50" w-city="Chicago" w-period="week" w-layout="horizontal" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="xxl" w-titlelink="off" w-sorting="groupByName" w-id="id_itzreh" w-countrycode="US" w-source="" w-branding="Ticketmaster" w-latlong=""></div>
     <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
