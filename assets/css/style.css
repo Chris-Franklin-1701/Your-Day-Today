@@ -83,6 +83,10 @@ p span {
     font-size: larger;
 }
 
+.card-content {
+    background: aqua;
+}
+
 .quote-header {
     text-align: center;
 }
