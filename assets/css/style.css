@@ -89,4 +89,12 @@ p span {
 
 #content {
     text-align: center;
+    font-family: 'Bebas Neue', 'Roboto Mono', 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
+    font-size: 30px;
+}
+
+#name {
+    text-align: center;
+    font-family: 'Dancing Script', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', monospace;
+    font-size: 20px;
 }

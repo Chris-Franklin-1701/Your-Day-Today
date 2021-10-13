@@ -90,6 +90,7 @@ function getValueInfo() {
 
 };
 
+//quote API
 const settings = {
 	"async": true,
 	"crossDomain": true,
