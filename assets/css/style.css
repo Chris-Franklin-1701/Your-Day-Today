@@ -11,6 +11,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-wrap: ;
 }
 
 p {
@@ -106,7 +108,8 @@ p span {
     text-align: center;
     font-family: 'Bebas Neue', 'Roboto Mono', 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
     font-size: 30px;
-    color: white;
+    -webkit-text-stroke: .5px black;
+    -webkit-text-fill-color: white;
 }
 
 #name {
@@ -126,12 +129,6 @@ body {
 
 .column {
     margin-top: 40px;
-}
-
-.quote {
-    position: absolute;
-    left: 1300px;
-    top: 150px;
 }
 
 #weatherDash {
