@@ -14,7 +14,8 @@
 }
 
 p {
-    color: var(--brown)
+    color: var(--blue);
+    font-size: 24px;
 }
 
 .title {
@@ -55,17 +56,19 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: var(--olive);
+    color: chartreuse;
     display: block;
     border-radius: 10px;
+
 }
 
 #container p {
-    color:var(--olive)
+    color:chartreuse;
+    font-size: 28px;
 }
 
 #container span {
-    color: var(--brown);
+    color: white;
 }
 
 .columns.is-link.is-multiline {
@@ -81,19 +84,16 @@ p {
 
 h2 {
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 40px;
 }
 
 p span {
     font-weight: normal;
-    font-size: larger;
+    font-size: 24px;
 }
 
 .card-content {
-    background-image: url("../images/blue-sky-background-with-clouds-1596445441QP9.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:var(--khaki);
 }
 
 .quote-header {
@@ -118,9 +118,20 @@ p span {
 }
 
 body {
-    background-color: var(--khaki);
+    background-color: white;
 }
 
 .column {
     margin-top: 40px;
+}
+
+#weatherDash {
+    background-image: url("../images/blue-sky-background-with-clouds-1596445441QP9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.value {
+    font-size: 24px;
 }
