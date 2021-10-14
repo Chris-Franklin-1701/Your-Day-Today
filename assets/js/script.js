@@ -296,22 +296,21 @@ function futureForecast(location) {
 }
 
 
-getSearchHistory();
+function getSearchHistory(){
 if (searchHistory.length > 0){
     currentWeather(searchHistory[searchHistory.length]);
     futureForecast(searchHistory[searchHistory.length]);
-};
+};}
 
 
-function getSearchHistory(){
+/*function getSearchHistory(){
     historyEl.html("");
     for (var i = 0; i < searchHistory.length;i++){
-        historyItem.addEventListener("click",function(){
-            currentWeather(historyItem.value);
-        })
+        currentWeather(historyItem.value);
+        }
         historyEl.append(historyItem);
-    }
-}
+};*/
+
 
 
 //quote API
