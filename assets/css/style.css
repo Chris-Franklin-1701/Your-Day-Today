@@ -69,6 +69,7 @@ p {
 
 #container span {
     color: white;
+    font-size: 24px;
 }
 
 .columns.is-link.is-multiline {
@@ -98,19 +99,21 @@ p span {
 
 .quote-header {
     text-align: center;
+    color: white;
 }
 
 #content {
     text-align: center;
     font-family: 'Bebas Neue', 'Roboto Mono', 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
     font-size: 30px;
-    color: var(--blue)
+    color: white;
 }
 
 #name {
     text-align: center;
     font-family: 'Dancing Script', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', monospace;
     font-size: 20px;
+    color: white;
 }
 
 .notification {
@@ -125,11 +128,17 @@ body {
     margin-top: 40px;
 }
 
+.quote {
+    position: absolute;
+    left: 1300px;
+    top: 150px;
+}
+
 #weatherDash {
-    background-image: url("../images/blue-sky-background-with-clouds-1596445441QP9.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+background-image: url("../images/blue-sky-background-with-clouds-1596445441QP9.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .value {
