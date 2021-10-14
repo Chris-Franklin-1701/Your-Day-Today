@@ -1,3 +1,11 @@
+:root {
+    --olive: #BBBE64;
+    --blue: #277CB3;
+    --brown: #663B04;
+    --khaki: #BCAA99;
+    --lilac: #AB94A8;
+}
+
 .hero {
     background-image: url("../images/beautiful_morning-wallpaper-2048x1152.png");
     background-position: center;
@@ -5,13 +13,17 @@
     background-size: cover;
 }
 
+p {
+    color: var(--blue)
+}
+
 .title {
-    color:olive;
+    color:darkolivegreen;
     font-weight: bold;
 }
 
 .subtitle {
-    color: olive;
+    color: darkolivegreen;
     font-style: italic;
 }
 
@@ -31,16 +43,6 @@
     background-size: cover;
 }
 
-.title {
-    color:olive;
-    font-weight: bold;
-}
-
-.subtitle {
-    color: olive;
-    font-style: italic;
-}
-
 .tile.is-ancestor {
     margin-top: 7px;
     margin-left: 0px;
@@ -53,13 +55,17 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: turquoise;
+    color: var(--olive);
     display: block;
     border-radius: 10px;
 }
 
+#container p {
+    color:var(--olive)
+}
+
 #container span {
-    color: black;
+    color: var(--brown);
 }
 
 .columns.is-link.is-multiline {
@@ -84,7 +90,7 @@ p span {
 }
 
 .card-content {
-    background: aqua;
+    background: var(--khaki);
 }
 
 .quote-header {
@@ -95,10 +101,23 @@ p span {
     text-align: center;
     font-family: 'Bebas Neue', 'Roboto Mono', 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
     font-size: 30px;
+    color: var(--blue)
 }
 
 #name {
     text-align: center;
     font-family: 'Dancing Script', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', monospace;
     font-size: 20px;
+}
+
+.notification {
+    background-color: var(--brown);
+}
+
+body {
+    background-color: var(--khaki);
+}
+
+.column {
+    margin-top: 40px;
 }
