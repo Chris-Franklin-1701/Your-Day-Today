@@ -3,6 +3,8 @@ var microsoftValue = $("#microsoft-value");
 var amazonValue = $("#amazon-value");
 var googleValue = $("#google-value")
 var formSubmit = $("#search-btn");
+var historyEl = $("#list-history");
+var clearBtn = $("clear-btn");
 var currentLocation = $("#currentLocation");
 var currentLongitude = $("#lon");
 var currentLatitude = $("lat");
@@ -15,6 +17,8 @@ var currentHumidity = $("#humidity");
 var currentWindSpeed = $("#wind-speed");
 var currentUvIndex = $("#uv-index");
 var sCity = [];
+var searchHistory = JSON.parse(localStorage.getItem("search")) || [];
+console.log(searchHistory);
 
 
 
@@ -24,7 +28,8 @@ var sCity = [];
 $(document).ready(function(){
     console.log("Worked!");
     getValueInfo();
-    $("#future-weather").hide();
+    currentWeather(searchHistory[searchHistory.length-1])
+    futureForecast(searchHistory[searchHistory.length-1]);
 })
 
 function find(l) {
@@ -127,6 +132,9 @@ $(formSubmit).on("click",function(event){
         currentWeather(location);
         futureForecast(location);
         $("#future-weather").show();
+        searchHistory.push(location);
+        localStorage.setItem("search",JSON.stringify(searchHistory));
+        getSearchHistory();
 });
 
 function currentWeather(location) {
@@ -288,40 +296,23 @@ function futureForecast(location) {
 }
 
 
-function addToList(location) {
-    var listEl = $("<li>"+location.toUpperCase()+"</li");
-    $(listEl).attr("class", "list-group-item");
-    $(listEl).attr("data-value",location.toUpperCase());
-    $(".list-group").append(listEl);
-}
+getSearchHistory();
+if (searchHistory.length > 0){
+    currentWeather(searchHistory[searchHistory.length]);
+    futureForecast(searchHistory[searchHistory.length]);
+};
 
-function invokePastLocation(event) {
-    var liEl = event.target;
-    if (event.target.matches("li")){
-        location=liEl.textContent.trim();
-        currentWeather(location);
+
+function getSearchHistory(){
+    historyEl.html("");
+    for (var i = 0; i < searchHistory.length;i++){
+        historyItem.addEventListener("click",function(){
+            currentWeather(historyItem.value);
+        })
+        historyEl.append(historyItem);
     }
 }
 
-function loadLastSearch() {
-    $("ul").empty();
-    var sCity = JSON.parse(localStorage.getItem("locationName"));
-    if(sCity !== null) {
-        sCity = JSON.parse(localStorage.getItem("locationName"));
-        for(i=0; i < sCity.length; i++) {
-            addToList(sCity[i]);
-        }
-        city=sCity[i+1];
-        currentWeather(location);
-    }
-}
-
-function clearSearch(event) {
-    event.preventDefault();
-    sCity=[];
-    localStorage.removeItem("locationName");
-    document.location.reload();
-}
 
 //quote API
 const settings = {
