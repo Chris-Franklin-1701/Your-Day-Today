@@ -14,7 +14,7 @@
 }
 
 p {
-    color: var(--blue)
+    color: var(--brown)
 }
 
 .title {
@@ -90,7 +90,10 @@ p span {
 }
 
 .card-content {
-    background: var(--khaki);
+    background-image: url("../images/blue-sky-background-with-clouds-1596445441QP9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .quote-header {
