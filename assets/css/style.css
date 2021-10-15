@@ -6,6 +6,11 @@
     --lilac: #AB94A8;
 }
 
+body {
+    background-color: white;
+    font-family: 'Roboto Mono', 'SF Mono', 'Fira Code', 'Fira Mono', monospace;
+}
+
 .hero {
     background-image: url("../images/beautiful_morning-wallpaper-2048x1152.png");
     background-position: center;
@@ -123,10 +128,6 @@ p span {
     background-color: var(--brown);
 }
 
-body {
-    background-color: white;
-}
-
 .column {
     margin-top: 40px;
 }
@@ -140,4 +141,5 @@ background-size: cover;
 
 .value {
     font-size: 24px;
+    font-family: ;
 }
