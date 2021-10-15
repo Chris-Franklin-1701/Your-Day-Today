@@ -14,8 +14,8 @@ When you first load in you are greeted with a beautiful header which has a searc
 
 # Members
 Chris Franklin - cfrank306@gmail.com - https://github.com/SilverSSSC
-Matthew Nguyen - https://github.com/mnguyen14
-Daniel Morales - https://github.com/Danmorales2287
+Matthew Nguyen - matthewnguyen0814@gmail.com - https://github.com/mnguyen14
+Daniel Morales - danmorales2287@gmail.com - https://github.com/Danmorales2287
 
 ## Preview:
 
