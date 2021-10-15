@@ -13,4 +13,34 @@ When you first load in you are greeted with a beautiful header which has a searc
 
 
 # Members
-Chris Franklin, Matthew Nguyen, Daniel Morales.
+Chris Franklin - cfrank306@gmail.com - https://github.com/SilverSSSC
+Matthew Nguyen - 
+Daniel Morales - 
+
+## Preview:
+
+![Preview of the project](./Project1.png)
+
+![Preview of the project](./Project2.png)
+
+
+
+## Live Deployment
+
+https://silversssc.github.io/Your-Day-Today/
+
+## Installation
+
+Use git clone to clone this repository to your local drive
+
+'''bash
+git clone "insert repo"
+'''
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
