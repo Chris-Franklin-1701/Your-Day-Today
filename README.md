@@ -24,6 +24,13 @@ Daniel Morales - https://github.com/Danmorales2287
 ![Preview of the project](./Project2.png)
 
 
+## List of used technology:
+HTML5
+CSS
+Bulma CSS Framework
+JavaScript
+JQuery
+
 
 ## Live Deployment
 
